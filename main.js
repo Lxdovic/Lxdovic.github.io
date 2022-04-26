@@ -99,6 +99,7 @@ let interactive_meshes = {
                                 .start()
                                 .onUpdate(() => {  scene.fog = new THREE.FogExp2( 0xffffff, fog_amnt.x) })
                                 .onComplete(() => {
+                                    window.location.href = 'https://github.com/Lxdovic'
                                     controls.target.set(-11, 1, 10)
                                     camera.position.set( 3, 11, 18)
                                     scene.background = new THREE.Color(.1, .4, .7)
@@ -111,7 +112,6 @@ let interactive_meshes = {
                                 .start()
                                 .onUpdate(() => { scene.background = new THREE.Color(bg_color.r, bg_color.g, bg_color.b) })
                                 .onComplete(() => { 
-                                    window.location.href = 'https://github.com/Lxdovic'
                                 })
                         })
                 },
@@ -169,6 +169,7 @@ let interactive_meshes = {
                                 .start()
                                 .onUpdate(() => {  scene.fog = new THREE.FogExp2( 0xffffff, fog_amnt.x) })
                                 .onComplete(() => {
+                                    window.location.href = 'https://www.lxdovic.fr'
                                     controls.target.set(-11, 1, 10)
                                     camera.position.set( 3, 11, 18)
                                     scene.background = new THREE.Color(.1, .4, .7)
@@ -181,7 +182,6 @@ let interactive_meshes = {
                                 .start()
                                 .onUpdate(() => { scene.background = new THREE.Color(bg_color.r, bg_color.g, bg_color.b) })
                                 .onComplete(() => { 
-                                    window.location.href = 'https://www.lxdovic.fr'
                                  })
                         })
                 },
@@ -240,6 +240,7 @@ let interactive_meshes = {
                                 .start()
                                 .onUpdate(() => {  scene.fog = new THREE.FogExp2( 0xffffff, fog_amnt.x) })
                                 .onComplete(() => {
+                                    window.location.href = 'https://www.linkedin.com/in/ludovic-debever-044033230/'
                                     controls.target.set(-11, 1, 10)
                                     camera.position.set( 3, 11, 18)
                                     scene.background = new THREE.Color(.1, .4, .7)
@@ -252,7 +253,6 @@ let interactive_meshes = {
                                 .start()
                                 .onUpdate(() => { scene.background = new THREE.Color(bg_color.r, bg_color.g, bg_color.b) })
                                 .onComplete(() => { 
-                                    window.location.href = 'https://www.linkedin.com/in/ludovic-debever-044033230/'
                                  })
                         })
                 },
