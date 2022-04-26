@@ -356,10 +356,15 @@ document.body.onload = async () => {
     interactive_meshes.init()
 }
 
-renderer.domElement.addEventListener('click', event => {
+renderer.domElement.addEventListener('touchstart', click_event, true)
+renderer.domElement.addEventListener('click', click_event)
+
+function click_event(event) {
+    console.log(event)
+
     let mouse = {
-        x: ( event.clientX / renderer.domElement.clientWidth ) * 2 - 1,
-        y: - ( event.clientY / renderer.domElement.clientHeight ) * 2 + 1
+        x: ( (event.clientX || event.changedTouches[0].clientX) / renderer.domElement.clientWidth ) * 2 - 1,
+        y: - ( (event.clientY || event.changedTouches[0].clientY) / renderer.domElement.clientHeight ) * 2 + 1
     }
 
     raycaster.setFromCamera(mouse, camera)
@@ -381,7 +386,7 @@ renderer.domElement.addEventListener('click', event => {
 
         interactive_meshes.mesh_groups[i].events.click?.(interactive_meshes.mesh_groups[i].meshes)
     }
-})
+}
 
 renderer.domElement.addEventListener('mousemove', event => {
     if (!model) { return }
