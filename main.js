@@ -210,7 +210,7 @@ let interactive_meshes = {
                 }
 
                 let font = await fontLoad('./fonts/helvetiker_regular.json')
-                let text_geometry = new THREE.TextGeometry( 'PORTFILIO', { font: font, size: .35, height: .05, curveSegments: 12, bevelEnabled: false, })
+                let text_geometry = new THREE.TextGeometry( 'PORTFOLIO', { font: font, size: .35, height: .05, curveSegments: 12, bevelEnabled: false, })
                 let text = new THREE.Mesh( text_geometry, new THREE.MeshToonMaterial({ color: 0xffffff }))
                 text.position.set(-20, 4.3, 9.4)
                 text.rotation.y = Math.PI / 2
