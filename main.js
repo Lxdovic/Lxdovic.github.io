@@ -302,7 +302,7 @@ document.body.onload = async () => {
     blue_light.position.set(-20, 10, 20)
     scene.add(blue_light)
 
-    let pink_light = new THREE.PointLight( 0xff00ff, 1)
+    let pink_light = new THREE.PointLight( 0xff00ff, .5)
     pink_light.position.set(0, 10, 0)
     scene.add(pink_light)
 
