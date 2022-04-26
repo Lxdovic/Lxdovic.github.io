@@ -52,7 +52,7 @@ let interactive_meshes = {
                                 .onComplete(() => {
                                     controls.target.set(-11, 1, 10)
                                     camera.position.set( 3, 11, 18)
-                                    scene.background = new THREE.Color(.1, .3, .4)
+                                    scene.background = new THREE.Color(.1, .4, .7)
                                     scene.fog = new THREE.FogExp2( 0xffffff, .007)
                                     console.log(sun)
                                     sun.intensity == 4 ? sun.intensity = 0 : sun.intensity = 4
@@ -280,7 +280,7 @@ document.body.onload = async () => {
     document.getElementById('screen').appendChild(renderer.domElement)
 
     // SCENE SETUP
-    scene.background = new THREE.Color(.1, .3, .4)
+    scene.background = new THREE.Color(.2, .6, .8)
     scene.fog = new THREE.FogExp2( 0xffffff, .007)
 
     // LIGHT & SHADOWS SETUP
